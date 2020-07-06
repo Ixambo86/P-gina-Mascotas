@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mascotas</title>
+        <script src="javascript/jquery-3.5.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/4d3490a8ea.js" crossorigin="anonymous"></script>
+        <script src="javascript/negocios-datos.js"></script>
+        <script src = javascript/negocios.js></script>
+        <script src="javascript/mapa.js"></script>
+        <link rel = "stylesheet" href = "css/negocios.css">
+        
+        <!-- MAPA -->
+        <script src="./leaflet/leaflet.js"></script>
+        <script src="./leaflet/leaflet.markercluster-src.js"></script>
+        <link rel="stylesheet" href="./leaflet/leaflet.css">
+        <link rel="stylesheet" href="./leaflet/MarkerCluster.css">
+        <link rel="stylesheet" href="./leaflet/MarkerCluster.Default.css">
+    </head>
+    
+    <body>
+        <div class="contenedor">
+            <header >
+                <h1>Mascotas</h1>
+                <nav>
+                    <a href="registro.html" class="registrarse">Registrarse</a> 
+                    <a href="login.html" class = "iniciarSesion">Iniciar sesión</a>
+                </nav>
+            </header>
+        
+            <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="avisos.html">Avisos</a>
+                    <a href="negocios.html">Negocios</a>
+                    <a href="clima.html">Clima</a>
+            </nav>
+            
+            <aside>
+                <div class= "filtros">
+                    <div class="reporte">
+                        <h3>Servicio</h3>
+            
+                        <input type="checkbox" class="filtro_servicio" id="veterinaria" checked>
+                        <label for="veterinaria">Veterinaría</label><br>
+            
+                        <input type="checkbox" class="filtro_servicio" id="peluqueriaCanina" checked>
+                        <label for="peluqueriaCanina">Peluquería Canina</label><br>
+            
+                        <input type="checkbox" class="filtro_servicio" id="forrajeria" checked>
+                        <label for="forrajera">Forrajería</label>
+                    </div>
+
+                    <div class="horariosDeAtencion">
+                        <h3>Horarios de atención</h3>
+
+                        <input type="checkbox" class="filtro_horariosDeAtencion" id="lunesViernes" checked>
+                        <label for="lunesViernes">Lunes a Viernes</label><br>
+            
+                        <input type="checkbox" class="filtro_horariosDeAtencion" id="sabado" checked>
+                        <label for="sabado">Sábados</label><br>
+            
+                        <input type="checkbox" class="filtro_horariosDeAtencion" id="domingo" checked>
+                        <label for="domingo">Domingos</label>
+                    </div>
+                    
+                    <div class="caja_boton">
+                        <button class="btn_filtrar"><i class="fas fa-search"></i>  FILTRAR</button>
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="publicaciones">
+                
+            </main>
+
+            <div class="cont_mapa">
+                <div id="mapid">
+
+                </div>
+            </div>
+
+            <footer>
+                <p>Copyright © 2020 UNGS - Web diseñada por Grupo 2</p>
+            </footer>
+
+        </div>
+
+        <!-- VENTANA DE DETALLES -->
+        <div class="cont_ventana">
+            <div class="ventana">
+                <div class="header">
+                    <button class="cerrar">X</button>
+                </div>
+                <div class="contenido">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="cont_info">
+                        <div class="info">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

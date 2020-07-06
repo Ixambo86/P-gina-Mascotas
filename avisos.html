@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mascotas</title>
+        <script src="javascript/jquery-3.5.1.min.js"></script>
+        <script src = javascript/avisos-datos.js></script>
+        <script src = javascript/avisos.js></script>
+        <script src="https://kit.fontawesome.com/4d3490a8ea.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href = "css/avisos.css">
+    </head>
+    
+    <body>
+        <div class="contenedor">
+            <header>
+                <h1>Mascotas</h1>
+                <nav>
+                    <a href="registro.html" class="registrarse">Registrarse</a> 
+                    <a href="login.html" class = "iniciarSesion">Iniciar sesión</a>
+                </nav>
+            </header>
+
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="avisos.html">Avisos</a>
+                <a href="negocios.html">Negocios</a>
+                <a href="clima.html">Clima</a>
+            </nav>
+
+            <aside>
+                <div class= "filtros">
+                    <div class="reporte">
+                        <h3>Tipo de reporte</h3>
+            
+                        <input type="checkbox" class="filtro_reporte" id="adopcion" checked>
+                        <label for="adopcion">En adopción</label><br>
+            
+                        <input type="checkbox" class="filtro_reporte" id="perdido" checked>
+                        <label for="perdido">Perdido</label><br>
+            
+                        <input type="checkbox" class="filtro_reporte" id="encontrado" checked>
+                        <label for="encontrado">Encontrado</label>
+                    </div>
+            
+                    <div class="edad">
+                        <h3>Edad</h3>
+            
+                        <input type="checkbox" class="filtro_edad" id="menor_a_uno" checked>
+                        <label for="hasta1año">Hasta 1 año</label><br>
+            
+                        <input type="checkbox" class="filtro_edad" id="uno_a_cinco" checked>
+                        <label for="1a5">De 1 - 5 años</label><br>
+            
+                        <input type="checkbox" class="filtro_edad" id="seis_a_diez" checked>
+                        <label for="6a10">De 6 - 10 años</label><br>
+            
+                        <input type="checkbox" class="filtro_edad" id="mas_de_diez" checked>
+                        <label for="+10">Mas de 10 años</label>
+                    </div>
+            
+                    <div class="raza">
+                        <h3>Raza</h3>
+                        <select class="filtro_raza">
+                            <option value="todas">Todas</option>
+                            <option value="mestizo">Mestizo</option>
+                            <option value="akita">Akita</option>
+                            <option value="australian_terrier">Australian Terrier</option>
+                            <option value="beagle">Beagle</option>
+                            <option value="boxer">Boxer</option>
+                            <option value="bull_terrier">Bull terrier</option>
+                            <option value="bulldog_americano">Bulldog americano</option>
+                            <option value="cane_corso">Cane Corso</option>
+                            <option value="caniche">Caniche</option>
+                            <option value="chihuahua">Chihuahua</option>
+                            <option value="chow_chow">Chow chow</option>
+                            <option value="dalmata">Dálmata</option>
+                            <option value="dobermann">Dobermann</option>
+                            <option value="dogo_argentino">Dogo argentino</option>
+                            <option value="dogo_de_burdeos">Dogo de burdeos</option>
+                            <option value="galgo">Galgo</option>
+                            <option value="gran_danes">Gran danés</option>
+                            <option value="rottweiler">Rottweiler</option>
+                            <option value="sabueso">Sabueso</option>
+                            <option value="san_bernardo">San bernardo</option>
+                            <option value="pit_bull">Pit bull</option>
+                            <option value="siames">Siames</option>
+                            <option value="vanturco">Van Turco</option>
+                            <option value="loro">Loro</option>
+                            <option value="tortuga">Tortuga de Tierra</option>
+                            <option value="persa">Persa</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="caja_boton">
+                        <button class="btn_filtrar"><i class="fas fa-search"></i> FILTRAR</button>
+                    </div>
+                </div>
+            </aside>        
+
+            <main class="publicaciones">
+                
+            </main>
+
+            <footer>
+                <p>Copyright © 2020 UNGS - Web diseñada por Grupo 2</p>
+            </footer>
+        </div>
+        
+        <div class="cont_ventana">
+            <div class="ventana">
+                <div class="header">
+                    <button class="cerrar">X</button>
+                </div>
+                <div class="contenido">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <div class="cont_info">
+                        <div class="info">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
